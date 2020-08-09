@@ -1,25 +1,11 @@
 #!/bin/bash
 
-#############################################################
-#                                                           #
-# NOME: instalar-programas.sh                               #
-#                                                           # 
-# AUTOR: Víctor Donola Ferreira (vdonoladev)                #
-#                                                           #
-# DATA: 07/07/2020                                          #
-#                                                           #
-# DESCRIÇÃO: O script faz a instalação dos principais       #
-#            programas utilizados.                          #
-#                                                           #
-# USO: ./programas.sh                                       #
-#############################################################
-
 clear
 while true; do
 echo -e "#############################################################
-        \e[1;31mSISTEMA DE INSTALAÇÃO DE PROGRAMAS\e[0m              #
+        \e[1;31mPROGRAM INSTALLATION SYSTEM\e[0m                     #
                                                                      #
-        Digite o número do programa que você deseja instalar:        #
+        Enter the number of the program you want to install:         #
                                                                      #
         1 - Gnome Tweak Tool                                         # 
         2 - Utilitários de arquivo                                   #
@@ -31,26 +17,26 @@ echo -e "#############################################################
         8 - Google Chrome                                            #
         9 - Skype                                                    #
        10 - Blender                                                  #
-       11 - Limpe o sistema                                          #
+       11 - Clean the system                                         #
        12 - Gparted                                                  #
        13 - Editor Dconf                                             # 
        14 - Audacity                                                 #
-       15 - Instalar todos os programas                              #
-       0 - Sair                                                      #
+       15 - Install all programs                                     #
+       0 - Exit                                                      #
 ######################################################################"
 
 echo " "
-echo -n "->OPÇÃO:  "
+echo -n "->OPTION:  "
 
-read opcao
+read option
 
-# verifica se foi digitada uma opção.
-if [ -z $opcao ]; then
-    echo ERRO: digite uma opcao
+# checks if an option has been entered.
+if [ -z $option ]; then
+    echo ERROR: enter an option
     exit
 fi
 
-case $opcao in
+case $option in
 
     1)
    apt install gnome-tweak-tool -y;;
@@ -114,15 +100,15 @@ case $opcao in
    ;;
     0)  
    echo "" 
-        echo Saindo do sistema de instalação...
+        echo Exiting the installation system ...
    sleep 3
         exit
    ;;
     *)
         echo
-        echo ERRO: Opção Incorreta!
+        echo ERROR: Incorrect option!
    echo ""
-   echo "Tente novamente!"
+   echo "Try again!"
         echo 
    ;;
 esac
