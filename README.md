@@ -101,7 +101,7 @@ Agradecimento especial a todas as pessoas que contribuíram para este projeto.
 
 <h2 id="contribute">Contribuir</h2>
 
-1. `git clone https://github.com/vdonoladev/TempTrack.git`
+1. `git clone https://github.com/vdonoladev/QuickInstall.git`
 2. `git checkout -b feature/NAME-OF-FEATURE`
 3. Siga os **Commit Patterns**
 4. Abra um **Pull Request** explicando o problema resolvido ou o recurso feito, se houver, anexe a captura de tela das modificações visuais e aguarde a revisão!
